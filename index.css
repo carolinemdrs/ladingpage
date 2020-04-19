@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+   }
+
+ /* --------------------------------- SEÇÃO INTRO /INÍCIO ---------------------------------*/
+#introduction {
+    background-color: #536dfe;
+}
+
+#intro-container {
+    background-image: url('imgs/ppl.jpg');
+    background-repeat: no-repeat;
+    height: 80vh;
+    background-size: cover;
+    opacity: 0.7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logo {
+    height: 10vh;
+    width: 15%;
+    margin-top: 2vh;
+}
+
+#intro-text {
+    color:#fff;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 26vh; 
+    font-family: "Lucida Console", Courier, monospace;
+   }
+
+   /* --------------------------------- SEÇÃO CURSOS ---------------------------------*/
+
+#courses-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr;
+    justify-items: center;
+}
+
+.courses-card{
+    width: 60%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color:#fff59d;
+    text-align: justify;
+    border-radius: 5%;
+    }
+
+.title{
+   text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding:5px;
+}
+
+#doctor {
+    height: 15vh;
+}
+
+#show-courses{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Lucida Console", Courier, monospace;
+    color:#1a237e;
+    margin-top: 10px;
+}
+#seta{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* --------------------------------- SEÇÃO DEPOIMENTOS ---------------------------------*/
+#show-students {
+    font-family: "Lucida Console", Courier, monospace;
+    color:#1a237e;
+    margin: 50px 0px 20px 80px;
+    padding-top: 50px
+}
+
+.ppl-photo {
+    height: 15vh;
+    width: 30%;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#people-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr;
+    justify-items: center;
+
+}
+
+.people-card{
+    width: 60%;
+    padding: 10px;
+    margin-top: 15px;
+    text-align: justify;
+    border-radius: 5%;
+    background-color: #fff;
+    height: 40vh;
+}
+
+#section-ppl{
+    background-color: #c8e6c9;
+    height: 65vh;
+}
+/* --------------------------------- SEÇÃO FORM ---------------------------------*/
+
+#contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin: 15px 0 15px 0;
+
+}
+
+#tips{
+    display:flex;
+    justify-content: center;
+}
+
+#form-contact{
+    display:grid;
+    grid-gap:10px;
+    width: 80%;
+}
+
+#doctor2{
+    height: 65vh;
+}
+
+#speak{
+    background-color: #fff9c4;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
+    border-bottom-right-radius: 40%;
+    height: 30vh;
+    width: 50%;
+}
+
+#speak-text{
+    text-align: center;
+    padding-top:6vh;
+    padding-left: 6px;
+    padding-right: 6px;
+
+}
+
+/* --------------------------------- FOOTER ---------------------------------*/
+
+footer {
+    background-color: rgb(28,36,82);
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img-color{
+    background-color: #fff;
+    border-radius: 50%;
+    height: 6vh;
+    padding:8px;
+}
+
+
+.stay-home-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+ 
+}
+
+.stay-home {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    opacity: 0;
+    animation-name: stayhome;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes stayhome {
+
+    25%{
+        opacity: 1;
+        transition:scale(1.1, 1.1);
+    }
+    50%{
+        opacity: 0;
+    }
+}
+
+.stay-home:nth-child(1){
+animation-delay: 2s;
+}
+
+.stay-home:nth-child(2){
+animation-delay: 5s;
+}
+.stay-home:nth-child(3){
+animation-delay: 8s;
+}
+
+.stay-home-img {
+    height: 10vh;
+}
+
