@@ -151,8 +151,6 @@
     }
 }
 
-
-
 .people-card{
     width: 60%;
     padding: 10px;
@@ -170,7 +168,8 @@
 }
 @media (max-width: 667px) and (min-width:0px)   {
     #section-ppl{
-        height: 180vh;
+        height: 170vh;
+        margin-top: 15px;
     }
 }
 
@@ -211,7 +210,7 @@
 
 @media (max-width: 667px) and (min-width:0px)   {
     #form-contact{
-        width: 50%;
+        width: 60%;
     }
 }
 
@@ -220,7 +219,8 @@
 }
 @media (max-width: 667px) and (min-width:0px)   {
     #doctor2{
-        height: 35vh;
+        height: 40vh;
+        padding-top: 5px;
     }
 }
 
@@ -238,7 +238,7 @@
         border-top-right-radius: 40%;
         border-bottom-right-radius: 0%;
         border-bottom-left-radius: 40%;
-        height: 40vh;
+        height: 45vh;
     }
 }
 
@@ -261,7 +261,7 @@ button {
 }
 @media (max-width: 667px) and (min-width:0px)   {
        button{
-        width: 50%;
+        width: 65%;
        } 
 }
 
@@ -309,8 +309,9 @@ footer {
 }
 @media (max-width: 667px) and (min-width:0px)   {
     .img-color{
-        height: 3vh;
-    } 
+        height: 4vh;
+        margin:2px;
+    }
 }
 
 .stay-home-container {
@@ -362,3 +363,22 @@ animation-delay: 8s;
     height: 10vh;
 }
 a { color: rgb(28,36,82); } 
+
+/* --------------------------------- animação scroll ---------------------------------*/
+[data-animate] {
+    opacity: 0;
+    transition: 2s;
+}
+
+[data-animate ="left"] {
+   transform: translate3d(50px, 0, 0)
+}
+
+[data-animate ="right"] {
+    transform: translate3d(-50px, 0, 0)
+ }
+
+ [data-animate].animate {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px)
+ }
