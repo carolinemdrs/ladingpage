@@ -1,2 +1,2 @@
-# ladingpage
-Lading page para promover cursos na área da saúde e captar leads.
+# landingpage
+Landing page para promover cursos na área da saúde e captar leads.

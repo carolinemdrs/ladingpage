@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="index.css">
+        <script language="javascript" src="index.js"></script>
         <title>Escola de Saúde</title>
     </head>
     <body>
@@ -102,22 +103,21 @@
          
             <form id="form-contact">
                 <label>Nome</label>
-                <input>
+                <input type="text" id="name">
                 <label>Email</label>
-                <input>
+                <input type="text" id="email">
                 <label>Digite seu texto</label>
-                <textarea name="msg" rows="15" cols="30"></textarea>
-                <button type="submit" >Enviar</button>
+                <textarea name="msg" rows="15" cols="30" type="text" id="msg"></textarea>
+                <button type="submit" onClick= "getFormData(event)">Enviar</button>
             </form>
         </section>
-
         <footer>
-            <div>
-                <img src="imgs/fb.png" class="img-color" />
-                <img src="imgs/insta.svg" class="img-color"  />
-                <img src="imgs/youtube.svg" class="img-color"  />
-                <img src="imgs/medium.svg" class="img-color"  />
-                <img src="imgs/whats.svg" class="img-color"  />
+            <div id="social-media">
+               <a href="#"> <img src="imgs/fb.png" class="img-color" /> </a>
+               <a href="#"><img src="imgs/insta.svg" class="img-color"  /> </a>
+               <a href="#"><img src="imgs/youtube.svg" class="img-color"  /> </a>
+               <a href="#"><img src="imgs/medium.svg" class="img-color"  /> </a>
+               <a href="#"><img src="imgs/whats.svg" class="img-color"  /> </a>
             </div>
             <div class="stay-home-container" >
                 <div class="stay-home">
@@ -135,5 +135,4 @@
             </div>
         </footer>
     </body>
-
 </html>
